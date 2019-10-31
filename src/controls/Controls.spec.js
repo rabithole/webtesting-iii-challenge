@@ -22,3 +22,13 @@ test('Fire Event Controls', async () => {
 	const wrapper = rtl.render(<Controls />);
 	rtl.fireEvent.click(wrapper.getByText('Close Gate'));
 })
+
+test('Locked position', async () => {
+	const wrapper = rtl.render(<Controls />);
+	const gateOpenButton = wrapper.getByText(/Open Gate/i);
+
+	if(gateOpenButton === disabled) {
+		rtl.fireEvent.click(wrapper.getByText('Close Gate'));	
+	}
+	
+})
