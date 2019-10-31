@@ -16,4 +16,8 @@ afterEach(rtl.cleanup);
 test('Display', () => {
 	const wrapper = rtl.render(<Display />);
 	const defaultOpen = wrapper.getByText(/Open/i);
-})
+});
+
+test('Display', () => {
+	expect(rtl.render(<Display /> )).toMatchSnapshot();
+});

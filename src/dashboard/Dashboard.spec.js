@@ -13,16 +13,12 @@ import Dashboard from "./Dashboard";
 
 afterEach(rtl.cleanup);
 
-// test('Shows the controls', () => {
-// 	const wrapper = rtl.render(<Dashboard />);
-// 	const controls = wrapper.findByTitle(/Controls/i);
-// })
-
-// test('Shows Display', () => {
-// 	const wrapper = rtl.render(<Dashboard />);
-// 	const display = findByTitle();
-// })
+test('Shows the controls', () => {
+	expect(rtl.render(<Dashboard />)).toMatchSnapshot();
+});
 
 test('Shows the controls', () => {
-	rtl.expect(render(<Dashboard />)).toMatchSnapshot();
-});
+	const wrapper = rtl.render(<Dashboard />);
+	
+	const display = wrapper.getByText(/Gate Control Panel/i);
+})
