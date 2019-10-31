@@ -9,9 +9,6 @@ Object {
         <div
           class="display panel"
         >
-          <h1>
-            Gate Control Panel
-          </h1>
           <div
             class="led green-led"
           >
@@ -46,9 +43,6 @@ Object {
       <div
         class="display panel"
       >
-        <h1>
-          Gate Control Panel
-        </h1>
         <div
           class="led green-led"
         >

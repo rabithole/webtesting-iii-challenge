@@ -17,8 +17,8 @@ test('Shows the controls', () => {
 	expect(rtl.render(<Dashboard />)).toMatchSnapshot();
 });
 
-test('Shows the controls', () => {
-	const wrapper = rtl.render(<Dashboard />);
+// test('Shows the controls', () => {
+// 	const wrapper = rtl.render(<Dashboard />);
 	
-	const display = wrapper.getByText(/Gate Control Panel/i);
-})
+// 	const display = wrapper.getByText(/Gate Control Panel/i);
+// })

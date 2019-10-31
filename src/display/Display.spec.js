@@ -13,11 +13,17 @@ import Display from "./Display";
 
 afterEach(rtl.cleanup);
 
+const wrapper = rtl.render(<Display />);
+
 test('Display', () => {
-	const wrapper = rtl.render(<Display />);
+	// const wrapper = rtl.render(<Display />);
 	const defaultOpen = wrapper.getByText(/Open/i);
 });
 
 test('Display', () => {
 	expect(rtl.render(<Display /> )).toMatchSnapshot();
 });
+
+// test('Display class', () => {
+// 	wrapper.getByTestId('display panel');
+// });
